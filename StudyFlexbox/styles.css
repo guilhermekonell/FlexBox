@@ -1,0 +1,41 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex; /* alinha os itens horizontalmente por padrão (linha) */
+
+  /*flex-wrap: wrap; /* faz a quebra dos itens para que quando fique maior que o container, quebre em uma nova linha */
+  /*align-content: space-around; /* alinhar os elementos quando eles estão em mais de 1 linha */
+  /*flex-direction: column; /* direção dos itens */
+  /*align-items: center; /* alinha os itens no eixo contrário ao flex direction (row > column ; column > row) */
+  /*justify-content: center; /* alinha os itens no mesmo eixo do flex direction */
+}
+
+.box {
+  width: 200px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+
+  /*flex: 1 0; /* soma do flex-grow e do flex-shrink */
+  /*flex-grow: 1; /* elemento aceita ser redimensionado para caber no conteiner */
+  /*flex-shrink: 0; /* elemento não aceita ser redimensionado para expremer no container */
+}
+
+.red {
+  order: 3; /* ordem dos itens */
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
+}
